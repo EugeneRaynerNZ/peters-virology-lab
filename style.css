@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+html {
+    font-family: "Inter", system-ui;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+}
+
+.max-width {
+    max-width: 1268px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* Navigation Bar Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    height: 56px;
+    display: flex;
+}
+
+nav .max-width {
+    max-width: 1268px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #000;
+}
+
+nav > div > div {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 24px;
+    position: relative;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+
+nav > div > div a:last-child {
+    margin-right: 0;
+}
+
+nav a.active {
+    border-bottom: 2px solid black;
+}
+
+
+.homepage-header {
+    background-image: url('images/home-header.png');
+    background-size: cover;
+    background-position: center;
+    height: 826px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 56px;
+}
+
+.homepage-header .max-width {
+    max-width: 1268px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.homepage-header h1 {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.learn-more-btn {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    /* display: flex; */
+    padding: 16px 32px;
+    /* justify-content: center;
+    align-items: center;
+    gap: 10px; */
+
+    border-radius: 32px;
+    background: #FFF;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+
+    align-self: baseline;
+}
+
+
+
+
+
+.left-right {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    gap: 48px;
+}
+
+.right-left {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    gap: 48px;
+}
+
+.three-col {
+    display: flex;
+    gap: 16px;
+}
+
+.three-col > div {
+    display: flex;
+    gap: 24px;
+    /* flex: 0 0 33%; */
+    flex-direction: column;
+    justify-content: center;
+    background: #E2E2E2;
+    padding: 24px;
+}
+
+.three-col h1 {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.three-col p {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.three-col a {
+    border-radius: 32px;
+    background: #BE046A;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    align-self: center;
+
+    padding: 8px 16px;
+}
+
+
+
+
+#subpage header {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('images/subpage-header.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 56px;
+}
+
+#subpage header h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+
+footer {
+    margin-top: 120px;
+}
+
+footer .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+footer h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+footer p {
+    max-width: 332px;
+}
+
+footer .links {
+    flex: 0 0 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+footer .links a {
+    flex: 0 0 calc(50% - 16px);
+    color: black;
+}
+
+
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-height: 80%; /* Ensure the modal is scrollable */
+    overflow-y: auto; /* Enable vertical scroll */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
