@@ -71,6 +71,30 @@ p {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1268px) {
+    main {
+        padding: 0 24px;
+        width: auto !important;
+    }
+}
+
+
+.button {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    align-self: baseline;
+    gap: 10px;
+    border-radius: 4px;
+    background: #000;
+    color: #FFF !important;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;    
+}
 
 
 /* Navigation Bar Styles */
@@ -267,6 +291,137 @@ nav a.active {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+#subpage main h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+#subpage section {
+    padding: 60px 0
+}
+
+#subpage .two-col {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+#subpage .two-col > div {
+    flex: 1 0 calc(50% - 32px);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+#subpage .two-col > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#subpage .two-col > div img{
+    max-width: 200px;
+}
+
+#subpage .two-col > div a{
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+@media screen and (max-width: 800px) {
+    #subpage .two-col {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+    
+    #subpage .two-col > div {
+        flex: 1;
+    }
+}
+
+.publications h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 48px;
+}
+
+.publications h3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-bottom: 24px;
+}
+
+.publications h4 {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 24px;
+}
+
+.members--container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.members--container > div {
+    flex: 0 0 calc(25% - 16px);
+}
+
+.member img {
+    margin-bottom: 8px;
+}
+
+.member h2 {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 20px */
+    margin-bottom: 8px;
+}
+
+.member p {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+}
+
+.team img {
+    width: 100%;
 }
 
 

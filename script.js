@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalContext = document.getElementById('modal-context');
     const closeButton = document.querySelector('.close-button');
 
-    document.querySelectorAll('.members--container').forEach(container => {
+    document.querySelectorAll('.member').forEach(container => {
         container.addEventListener('click', () => {
             const img = container.querySelector('img');
             const name = container.querySelector('h2').textContent;
