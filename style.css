@@ -177,7 +177,7 @@ nav a.active {
     color: #FFF;
     font-size: 36px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -185,7 +185,7 @@ nav a.active {
     color: #000;
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 
     /* display: flex; */
@@ -217,6 +217,22 @@ nav a.active {
     align-items: center;
     padding: 100px 0;
     gap: 48px;
+}
+
+@media screen and (max-width: 800px) {
+    .left-right {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        padding-bottom: 0;
+    }
+    
+    .right-left {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: normal;
+        padding-bottom: 0;
+    }
 }
 
 .three-col {
@@ -260,12 +276,21 @@ nav a.active {
 
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 
     align-self: center;
 
     padding: 8px 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .three-col {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 48px;
+    }
 }
 
 
@@ -289,7 +314,7 @@ nav a.active {
     font-family: Inter;
     font-size: 60px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -336,7 +361,7 @@ nav a.active {
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -422,6 +447,18 @@ nav a.active {
 
 .team img {
     width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .members--container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 32px;
+    }
+
+    .member img {
+       width: 100%;
+    }
 }
 
 
