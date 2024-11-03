@@ -152,6 +152,51 @@ nav a.active {
     border-bottom: 2px solid black;
 }
 
+/* ... existing styles ... */
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    padding: 20px;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+}
+
+.close-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+    }
+}
 
 .homepage-header {
     background-image: url('images/home-header.png');
@@ -170,6 +215,7 @@ nav a.active {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding: 0 16px;
 }
 
 .homepage-header h1 {
